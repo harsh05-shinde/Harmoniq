@@ -22,7 +22,7 @@ if (loginForm) {
                 formData.append("password", password);
 
                 const response = await fetch(
-                    "http://127.0.0.1:8000/user/login", 
+                    "https://harmoniq-backend-ceb8.onrender.com/user/login", 
                     { 
                         method: "POST", 
                         headers: { 
@@ -92,7 +92,7 @@ if (signupForm) {
             try {
 
                 const response = await fetch(
-                    "http://127.0.0.1:8000/user/signup",
+                    "https://harmoniq-backend-ceb8.onrender.com/user/signup",
                     {
                         method: "POST",
                         headers: {

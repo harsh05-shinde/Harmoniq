@@ -2,7 +2,7 @@
 // CONFIGURATION & GLOBAL VARIABLES
 // ======================================================
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://harmoniq-backend-ceb8.onrender.com";
 
 let allSongs = [];
 
