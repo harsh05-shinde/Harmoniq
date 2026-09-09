@@ -21,13 +21,17 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MEDIA_DIR = BASE_DIR / "media"
 
 app.mount(
     "/media",
-    StaticFiles(directory="media"),
+    StaticFiles(directory=str(MEDIA_DIR)),
     name="media"
 )
-
 
 Base.metadata.create_all(bind = engine)
 app.include_router(user_router)
