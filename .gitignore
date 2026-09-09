@@ -34,5 +34,9 @@ Thumbs.db
 # Node
 node_modules/
 
+
 # Local music files
 Backend/media/songs/
+!Backend/media/songs/
+!Backend/media/songs/Husn.mp3
+!Backend/media/songs/Sathi.mp3
